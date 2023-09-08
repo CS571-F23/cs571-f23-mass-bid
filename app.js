@@ -10,7 +10,7 @@ fetch("https://cs571.org/api/auth/generate-bids", {
         "X-CS571-SECRET": SUPER_SECRET
     },
     body: JSON.stringify({
-        sendEmails: true,
+        sendEmails: false,
         bids: emails.map(em => {
             return {
                 nickname: "F23 Default",
